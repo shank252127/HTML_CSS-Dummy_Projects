@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--main-bg-color);   
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    padding: 0 25px;
+}
+
+.search {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.inputSearch {
+    width: 400px;
+    height: 27px;
+    border-radius: 3px;
+    margin: 0 50px 0 1px;
+    padding: 0 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.search button :hover{
+    font-weight: 900;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /* color: rgb(196, 193, 241); */
+    font-weight: bolder;
+}
+
+.container {
+    
+    min-height: calc(100vh - 60px - 10vh);
+}
+
+.slider{    
+    overflow: hidden;  
+    display: flex;
+    /* width: 80vw; */
+    margin: 12px auto auto;
+    justify-content: center;
+}
+
+.people{
+    width: 1000px;
+    height: 400px;
+}
+.card{
+    
+    background-color: rgb(241, 237, 237);
+    max-width: 91vw;
+    margin: 37px auto;
+    overflow: hidden;
+   
+}
+
+.card h2{
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.card-image{
+    width: 160px;
+    height: 160px;
+
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
